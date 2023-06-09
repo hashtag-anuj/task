@@ -10,7 +10,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login />} />
-          <Route path="/verifyotp" element={<Otp />} />
+          <Route path="/verifyotp/:no" element={<Otp />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/*" element={<h1>No data found.</h1>} />
         </Routes>

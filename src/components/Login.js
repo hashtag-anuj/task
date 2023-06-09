@@ -28,7 +28,7 @@ const Login = () => {
         console.log(response, "::::resp");
         if (response.status === 200) {
           console.log('OTP sent successfully!');
-          navigate("/verifyotp")
+          navigate(`/verifyotp/${phoneNumber}`)
         } else {
           console.error('Failed to send OTP');
         }
